@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Вход на сайт
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="span12">
+<h1>Вход на сайт:</h1>
+
+    {% macro form(this.beginWidget('CActiveForm', [ 
+            {'id':'login-form'},
+            {'enableClientValidation':true},
+            {'clientOptions': [{'validateOnSubmit':true}]}
+        ]
+    )) %}
+    
+    {{ form.labelEx(model,'username') }}
+    {{ form.textField(model,'username') }}
+    {{ form.error(model,'username') }}
+
+    {{ form.labelEx(model,'password') }}
+    {{ form.textField(model,'password') }}
+    {{ form.error(model,'password') }}
+
+    {{ form.labelEx(model,'rememberMe') }}
+    {{ form.textField(model,'rememberMe') }}
+    {{ form.error(model,'rememberMe') }}
+    
+    {{ C.Html.submitButton('Login') }}
+{% endmacro %}
+    {{ this.endWidget() }}
+</div>
+            </div>
+{% endblock body %}

@@ -1,0 +1,10 @@
+/.idea/
+/nbproject/
+/assets/
+/framework/
+/ckeditor/
+/requirements/
+/less/
+!*.gitkeep
+!*.gitignore
+*.php~

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+         {% block javascripts %}
+         {% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+     <div class="container" id="main">
+        <div  id="header" class="row">
+            <div class="span2"><div id="logo_img"></div> </div>
+            <div id="logo_text" class="span10">
+                <div class="hero-unit">
+                <h1>Веб-студия Монолит</h1>
+                </div>
+            </div>
+        </div>
+       {% block body %}{% endblock %}
+        <div  id="footer" class="row well">
+            <div class="span12"><p>&copy; 2011-2013 dmitxe.ru</p> </div>
+        </div>        
+             
+      </div>  
+    </body>
+</html>

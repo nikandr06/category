@@ -1,0 +1,73 @@
+body {
+    background-color: #8A20DB !important;
+}
+#page
+{
+	background: white;
+/*	color:#33C;*/
+        padding: 10px;
+}
+#header
+{
+	color: #309;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:36px;
+	/*	color:#A5C7FA*/
+	/*background-color:#BE23ED;*/ /*цвет фона кнопки для браузеров без поддержки CSS3*/
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#3437CD), to(#538BFF)); *//* для Webkit браузеров */
+	/*background: -moz-linear-gradient(top,  #3437CD, #538BFF);*/ /* для Firefox */
+   /* background-image: -o-linear-gradient(top,  #3437CD,  #538BFF); *//* для Opera 11 */
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3437CD', endColorstr='#538BFF'); *//* фильтр для IE */
+/*	background: linear-gradient(top, black, white);  */
+	margin: 0;
+	padding: 0;
+	height:150px;
+	width:100%;
+	/*border-top: 3px solid #C9E0ED;*/
+}
+#logo {
+/*	padding: 20px 30px;*/
+	background-image:url(img/logo.png);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	font-size: 200%;
+        margin-left: 20px;
+/*	text-shadow: #2C0781 8px 8px 4px;
+	filter: Shadow(Color=#2C0781, Direction=135, Strength=8);*/
+	/*margin: 0 auto;*/
+/*	position:relative;*/
+/*	top: 38px;*/
+/*	margin-top:-25px;*/
+	height:100%;
+	width:100%;
+}
+#logo span
+{
+	/*background-image:url(img/gradient_text.png);
+	background-repeat:repeat-x;*/
+	background: url("img/gradient_text.png") repeat-x scroll 0 0 transparent;
+	width:100%;
+	display: block;
+    height: 49px;
+    position: absolute;
+    bottom: 0.1em;
+}
+#footer {
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+#content {
+    width: 100%;
+}
+.syntaxhighlighter .container {
+    margin-top: 0;
+}
+.syntaxhighlighter .container:before, .syntaxhighlighter .container:after {
+    content: "";
+    display: block;
+    line-height: 0;
+}
